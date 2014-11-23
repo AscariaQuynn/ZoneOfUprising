@@ -1,0 +1,79 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 24.06.2014 23:47:38
+
+newmtl dark_fighter_6
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Ke D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_illumination.png
+	map_bump -bm 0.0200 D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_bump.gif
+	bump -bm 0.0200 D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_bump.gif
+
+newmtl wire_135059008
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.5294 0.2314 0.0314
+	Kd 0.5294 0.2314 0.0314
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_061135006
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.2392 0.5294 0.0235
+	Kd 0.2392 0.5294 0.0235
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_088199225
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.3451 0.7804 0.8824
+	Kd 0.3451 0.7804 0.8824
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_143225087
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.5608 0.8824 0.3412
+	Kd 0.5608 0.8824 0.3412
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_166229229
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6510 0.8980 0.8980
+	Kd 0.6510 0.8980 0.8980
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_087225198
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.3412 0.8824 0.7765
+	Kd 0.3412 0.8824 0.7765
+	Ks 0.3500 0.3500 0.3500

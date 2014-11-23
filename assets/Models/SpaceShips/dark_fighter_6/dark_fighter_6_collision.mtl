@@ -1,0 +1,156 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 20.05.2014 23:05:22
+
+newmtl 02___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultzz
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultzzz
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaulta
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultyy
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaulty
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultxx
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultx
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultaa
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultaaa
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+
+newmtl 02___Defaultyz
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png

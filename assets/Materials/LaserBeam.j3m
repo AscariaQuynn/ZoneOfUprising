@@ -1,0 +1,5 @@
+Material LaserBeam : Common/MatDefs/Misc/Particle.j3md {
+     MaterialParameters {
+        Texture : Materials/spark.png
+    }
+}

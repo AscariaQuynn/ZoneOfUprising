@@ -1,0 +1,11 @@
+Material EngineSmoke : Common/MatDefs/Misc/Particle.j3md {
+     MaterialParameters {
+        Texture : Materials/flame.png
+        Quadratic : 0.0
+        NumSamplesDepth : 0
+        PointSprite : false
+        GlowColor : 0.0 0.0 0.0 1
+     }
+    AdditionalRenderState {
+    }
+}

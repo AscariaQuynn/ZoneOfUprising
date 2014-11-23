@@ -1,0 +1,10 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Models/SpaceShips/space_frigate_6/space_frigate_6_color.png
+        GlowMap : Flip Repeat Models/SpaceShips/space_frigate_6/space_frigate_6_illumination.png
+        SpecularMap : Flip Repeat Models/SpaceShips/space_frigate_6/space_frigate_6_specular.png
+        Shininess : 10.0
+    }
+    AdditionalRenderState {
+    }
+}

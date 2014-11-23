@@ -1,0 +1,18 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Scenes/SpaceStation/Map__1_Noise.jpg
+        UseMaterialColors : false
+        ParallaxHeight : 0.05
+        Shininess : 20.0
+    }
+    AdditionalRenderState {
+      FaceCull Back
+      Wireframe Off
+      DepthWrite On
+      PolyOffset 0.0 0.0
+      Blend Off
+      PointSprite Off
+      ColorWrite On
+      DepthTest On
+    }
+}

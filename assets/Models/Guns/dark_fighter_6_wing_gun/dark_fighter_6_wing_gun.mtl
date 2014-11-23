@@ -1,0 +1,19 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 30.08.2014 18:37:37
+
+newmtl dark_fighter_6
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Kd D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_color.png
+	map_Ke D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_illumination.png
+	map_bump -bm 0.0200 D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_bump.gif
+	bump -bm 0.0200 D:\Hry\BorekBoritel\assets\Models\SpaceShips\dark_fighter_6\dark_fighter_6_bump.gif

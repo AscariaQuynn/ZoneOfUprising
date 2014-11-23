@@ -1,0 +1,587 @@
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+stop();
+/*PARSE ERROR in defineFunction2*/
+
+function2 _onSetReloading(false,false,true,false,true,false,true,false,false,0,duration,1,startTime,2,isReloading)
+{
+
+}
+
+_radiusFW.stop();
+isReloaded = false;
+_onSetMarkerType(reloading);
+
+if("" == 0)
+{
+	_radiusFW.setPosAsPercent(100);
+	isReloaded = true;
+	_onSetMarkerType(reloaded);
+	
+	if("")
+	{
+}
+
+}
+
+else
+{
+	
+	if("" == -1)
+	{
+		_radiusFW.setPosAsPercent(0);
+	}
+
+	else
+	{
+		
+		if("" > 0)
+		{
+			_radiusFW.setPosAsPercent("");
+			_radiusFW.restartFromCurrentFrame("");
+		}
+
+		else
+		{
+			_radiusFW.start("","");
+		}
+
+	}
+
+}
+
+/*PARSE ERROR in defineFunction2*/
+
+function2 _onCorrectReloadingTime(false,false,true,false,true,false,true,false,false)
+{
+
+}
+
+
+if(!isReloaded)
+{
+	_radiusFW.stop();
+	_radiusFW.restartFromCurrentFrame("");
+}
+
+/*PARSE ERROR in defineFunction2*/
+
+function2 _onSetMarkerType(false,false,true,false,true,false,true,false,false)
+{
+
+}
+
+crosshairMC.markerMC.tag.gotoAndStop("");
+/*PARSE ERROR in defineFunction2*/
+
+function2 _onSetTagType(false,false,true,false,true,false,true,false,false,0,alphaValue)
+{
+
+}
+
+crosshairMC.markerMC.gotoAndStop(type + "");
+crosshairMC.markerMC._alpha = "";
+_onSetMarkerType(normal);
+
+if(isReloaded)
+{
+	_onSetReloading(0,0,false);
+}
+
+/*PARSE ERROR in defineFunction2*/
+
+function2 _onSetReloadingType(false,false,true,false,true,false,true,false,false,0,alphaValue)
+{
+
+}
+
+crosshairMC.radiusMC.gotoAndStop(type + "");
+crosshairMC.radiusMC.mixingMC._alpha = "";
+
+if(isReloaded)
+{
+	_onSetReloading(0,0,false);
+}
+
+_radiusFW.m_targetMC = crosshairMC.radiusMC.mixingMC;
+gfx.io.GameDelegate.addCallBack(Crosshair.setReloading,this,_onSetReloading);
+gfx.io.GameDelegate.addCallBack(Crosshair.correctReloadingTime,this,_onCorrectReloadingTime);
+gfx.io.GameDelegate.addCallBack(Crosshair.setMarkerType,this,_onSetMarkerType);
+gfx.io.GameDelegate.addCallBack(Crosshair.setGunTag,this,_onSetTagType);
+gfx.io.GameDelegate.addCallBack(Crosshair.setMixing,this,_onSetReloadingType);
+var _radiusFW = net.wargaming.FrameWalker(crosshairMC.radiusMC.mixingMC,37,false);
+var isReloaded = false;
+
+function ()
+{
+	Stage.scaleMode = noScale;
+	Stage.align = TL;
+}
+
+onLoad = <function>;
+disabled = false;
+mode = manual;
+inspectableTarget = "";
+visible = true;
+disabled = false;
+mode = manual;
+inspectableTarget = "";
+visible = true;
+
+if(!_global.gfx)
+{
+	_global.gfx = new Object();
+}
+
+???;
+
+if(!_global.gfx.io)
+{
+	_global.gfx.io = new Object();
+}
+
+???;
+
+if(!_global.gfx.io.GameDelegate)
+{
+	
+	function ()
+	{
+}
+
+	gfx.io.GameDelegate = <function>;
+	<function>.prototype;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,true,false,false,2,methodName,1,params,2,scope)
+	{
+
+}
+
+	
+	if(!gfx.io.GameDelegate.initialized)
+	{
+		gfx.io.GameDelegate.initialize();
+	}
+
+	gfx.io.GameDelegate.nextID = gfx.io.GameDelegate.nextID;
+	gfx.io.GameDelegate.nextID = gfx.io.GameDelegate.nextID;
+	gfx.io.GameDelegate.nextID = gfx.io.GameDelegate.nextID;
+	gfx.io.GameDelegate.nextID;
+	gfx.io.GameDelegate.responseHash.gfx.io.GameDelegate.nextID = new Array("","");
+	<function>.prototype.unshift("",gfx.io.GameDelegate.nextID);
+	flash.external.ExternalInterface.call.apply(NULL,<function>.prototype);
+	delete gfx.io.GameDelegate.nextID.gfx.io.GameDelegate.responseHash;
+	call;
+	???.??? = <function>;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,false,true,true,false,false)
+	{
+
+}
+
+	gfx.io.GameDelegate.responseHash."";
+	
+	if(gfx.io.GameDelegate.responseHash."" == NULL)
+	{
+	}
+
+	gfx.io.GameDelegate.responseHash."".0;
+	gfx.io.GameDelegate.responseHash."".1;
+	gfx.io.GameDelegate.responseHash."".0.gfx.io.GameDelegate.responseHash."".1.apply(gfx.io.GameDelegate.responseHash."".0,gfx.io.GameDelegate.nextID.slice(1));
+	???.gfx.io.GameDelegate.nextID = receiveResponse;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,true,false,false,1,methodName,1,scope)
+	{
+
+}
+
+	
+	if(!gfx.io.GameDelegate.initialized)
+	{
+		gfx.io.GameDelegate.initialize();
+	}
+
+	gfx.io.GameDelegate.callBackHash.gfx.io.GameDelegate.responseHash."" = new Array(gfx.io.GameDelegate.responseHash."".0,gfx.io.GameDelegate.nextID);
+	???.gfx.io.GameDelegate.nextID = addCallBack;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,true,false,false)
+	{
+
+}
+
+	gfx.io.GameDelegate.callBackHash.gfx.io.GameDelegate.nextID = NULL;
+	???.gfx.io.GameDelegate.nextID = removeCallBack;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,false,true,true,false,false)
+	{
+
+}
+
+	gfx.io.GameDelegate.callBackHash."";
+	
+	if(gfx.io.GameDelegate.callBackHash."" == NULL)
+	{
+	}
+
+	gfx.io.GameDelegate.callBackHash."".0;
+	gfx.io.GameDelegate.callBackHash."".1;
+	gfx.io.GameDelegate.callBackHash."".0.gfx.io.GameDelegate.callBackHash."".1.apply(gfx.io.GameDelegate.callBackHash."".0,gfx.io.GameDelegate.nextID.slice(1));
+	???.gfx.io.GameDelegate.nextID = receiveCall;
+	
+	function ()
+	{
+		gfx.io.GameDelegate.initialized = true;
+		flash.external.ExternalInterface.addCallback(call,gfx.io.GameDelegate,gfx.io.GameDelegate.receiveCall);
+		flash.external.ExternalInterface.addCallback(respond,gfx.io.GameDelegate,gfx.io.GameDelegate.receiveResponse);
+	}
+
+	gfx.io.GameDelegate.nextID.initialize = <function>;
+	gfx.io.GameDelegate.nextID.responseHash = new Object();
+	gfx.io.GameDelegate.nextID.callBackHash = new Object();
+	gfx.io.GameDelegate.nextID.nextID = 0;
+	gfx.io.GameDelegate.nextID.initialized = false;
+}
+
+ASSetPropFlags(gfx.io.GameDelegate.prototype,NULL,1);
+
+if(!_global.net)
+{
+	_global.net = new Object();
+}
+
+???;
+
+if(!_global.net.wargaming)
+{
+	_global.net.wargaming = new Object();
+}
+
+???;
+
+if(!_global.net.wargaming.FrameWalker)
+{
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false,1,targetMC,2,framesCount)
+	{
+
+}
+
+	"".m_isInverted = "";
+	"".m_targetMC = "";
+	"".m_framesCount = "";
+	
+	if(!"".m_isInverted)
+	{
+	}
+
+	else
+	{
+	}
+
+	m_endFrame."".m_framesCount = 0;
+	"".m_name = [FrameWalker < + ""._name + >]: ;
+	net.wargaming.FrameWalker = "";
+	"".prototype;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	"".m_targetMC.gotoAndPlay("".prototype);
+	???."".prototype = play;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	Math.min(Math.max("".prototype,0),100);
+	int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100));
+	"".m_targetMC.gotoAndStop(int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)));
+	???."".prototype = setPosAsPercent;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false,1,totalTime)
+	{
+
+}
+
+	
+	if(int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) > 0)
+	{
+		
+		if("" == NULL)
+		{
+		}
+
+		else
+		{
+		}
+
+		int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount));
+		
+		if(!"".m_isInverted)
+		{
+		}
+
+		else
+		{
+		}
+
+		"".m_targetMC.gotoAndStop("".m_framesCount - int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)));
+	}
+
+	else
+	{
+		
+		if(!"".m_isInverted)
+		{
+		}
+
+		else
+		{
+		}
+
+		"".m_targetMC.gotoAndStop(0);
+	}
+
+	0.int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) = "".m_framesCount;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false,1,totalTime,1,startTime,3,postEffKeyFrame,3,scope)
+	{
+
+}
+
+	
+	if(!("" == NULL))
+	{
+		!("" == NULL);
+	}
+
+	
+	if(!("" == NULL))
+	{
+		"".m_funcObj = new Object();
+		"".m_funcObj.scope = "";
+		"".m_funcObj.func = "";
+	}
+
+	
+	if(!("".m_intervalID == -1))
+	{
+		clearInterval("".m_intervalID);
+		"".m_intervalID = -1;
+	}
+
+	
+	if(int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) > 0)
+	{
+		
+		if(!(int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) == NULL))
+		{
+			!(int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) == NULL);
+		}
+
+		
+		if(!(int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) < int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))))
+		{
+			"".walkEnd();
+		}
+
+		"".m_postEffKeyFrame = "";
+		"".m_startTime = m_startTime;
+		
+		if(int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) == NULL)
+		{
+		}
+
+		else
+		{
+		}
+
+		m_totalTime.int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) = (-int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount))) * 1000;
+		
+		if(int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) == NULL)
+		{
+		}
+
+		else
+		{
+		}
+
+		int(((int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount));
+		
+		if(!"".m_isInverted)
+		{
+		}
+
+		else
+		{
+		}
+
+		m_startFrame.int(((int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) = "".m_framesCount - int(((int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount));
+		"".m_targetMC.gotoAndStop("".m_startFrame);
+		"".m_intervalID = setInterval("",run,(int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * 1000) / "".m_framesCount);
+	}
+
+	else
+	{
+		"".walkEnd();
+	}
+
+	"".0 = "";
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	
+	if(!("".m_intervalID == -1))
+	{
+		clearInterval("".m_intervalID);
+		"".m_intervalID = -1;
+	}
+
+	
+	if(int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) > 0)
+	{
+		"".m_startTime = m_startTime;
+		"".m_startFrame = "".m_targetMC._currentframe;
+		
+		if("".m_isInverted)
+		{
+			"".m_isInverted;
+		}
+
+		
+		if(!("".m_startFrame == 0))
+		{
+			"".m_startFrame == 0;
+			
+			if(!"".m_isInverted)
+			{
+				!"".m_isInverted;
+			}
+
+		}
+
+		
+		if(!("".m_startFrame < "".m_endFrame))
+		{
+		}
+
+		"".m_totalTime = int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) * 1000;
+		"".m_intervalID = setInterval("",run,"".m_totalTime / "".m_framesCount);
+	}
+
+	else
+	{
+		"".walkEnd();
+	}
+
+	start.int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) = restartFromCurrentFrame;
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	
+	if(!("".m_intervalID == -1))
+	{
+		clearInterval("".m_intervalID);
+		"".m_intervalID = -1;
+	}
+
+	int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)).int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) = stop;
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	(run - "".m_startTime) / "".m_totalTime;
+	
+	if(!(((run - "".m_startTime) / "".m_totalTime) < 1))
+	{
+		clearInterval("".m_intervalID);
+		"".m_intervalID = -1;
+		"".walkEnd();
+	}
+
+	else
+	{
+		"".m_targetMC.gotoAndStop("".calculateFrameNumber((run - "".m_startTime) / "".m_totalTime));
+	}
+
+	setPosAsTime.int((("" / int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100))) * "".m_framesCount)) = run;
+/*PARSE ERROR in defineFunction2*/
+
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame));
+	Math.min(Math.max("".prototype,0),100).((run - "".m_startTime) / "".m_totalTime) = calculateFrameNumber;
+	function2 (false,false,true,false,true,false,false,true,false)
+	{
+
+}
+
+	"".m_targetMC.gotoAndStop("".m_endFrame);
+	
+	if("".m_postEffKeyFrame)
+	{
+		"".m_targetMC.gotoAndPlay("".m_postEffKeyFrame);
+	}
+
+	
+	if("".m_funcObj)
+	{
+		"".m_funcObj.scope."".m_funcObj.func();
+		delete m_funcObj."";
+		walkEnd;
+		"".m_funcObj = NULL;
+	}
+
+	???.??? = int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame));
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_funcObj = NULL;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_postEffKeyFrame = NULL;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_startTime = 0;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_totalTime = 0;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_startFrame = 0;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_endFrame = 0;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_isInverted = false;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_intervalID = -1;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_targetMC = NULL;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_framesCount = 0;
+	int((int((("".m_framesCount * Math.min(Math.max("".prototype,0),100)) / 100)) * ("".m_endFrame - "".m_startFrame) + "".m_startFrame)).m_name = NULL;
+}
+
+ASSetPropFlags(net.wargaming.FrameWalker.prototype,NULL,1);

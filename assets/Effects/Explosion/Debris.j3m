@@ -1,0 +1,5 @@
+Material MyMaterial : Common/MatDefs/Misc/Particle.j3md {
+    MaterialParameters {
+        Texture: Effects/Explosion/Debris.png
+    }
+}

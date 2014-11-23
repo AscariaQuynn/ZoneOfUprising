@@ -1,0 +1,10 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Models/SpaceShips/scifi_fighter_mk/SciFi_FighterMK_diffuse.jpg
+        GlowMap : Flip Repeat Models/SpaceShips/scifi_fighter_mk/SciFi_FighterMK_light.jpg
+        SpecularMap : Flip Repeat Models/SpaceShips/scifi_fighter_mk/SciFi_FighterMK_gloss.jpg
+        Shininess : 10.0
+    }
+    AdditionalRenderState {
+    }
+}
