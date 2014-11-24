@@ -4,7 +4,6 @@
  */
 package cz.ascaria.zoneofuprising.cameras;
 
-import com.jme3.bullet.control.RigidBodyControl;
 import com.jme3.input.InputManager;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
