@@ -8,6 +8,7 @@ import com.jme3.math.Ray;
 import com.jme3.network.serializing.Serializer;
 import cz.ascaria.network.serializers.RaySerializer;
 import cz.ascaria.network.central.profiles.EntityProfile;
+import cz.ascaria.zoneofuprising.utils.MovableVector;
 import cz.ascaria.zoneofuprising.utils.SpawnPoint;
 
 /**
@@ -45,6 +46,7 @@ public class MessagesRegistrator {
         // Misc. classes
         Serializer.registerClass(Ray.class, new RaySerializer());
         Serializer.registerClass(SpawnPoint.class);
+        Serializer.registerClass(MovableVector.class);
         Serializer.registerClass(EntityProfile.class);
     }
 }

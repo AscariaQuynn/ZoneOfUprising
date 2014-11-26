@@ -1,0 +1,154 @@
+XI 26, 2014 11:34:25 ODP. cz.ascaria.network.ClientManager initialize
+INFO: ClientAppState.initialize() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:25 ODP. cz.ascaria.zoneofuprising.input.GuiManagerInputListener registerInputs
+INFO: GuiManagerInputListener registering inputs
+XI 26, 2014 11:34:25 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: LoginLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:26 ODP. cz.ascaria.zoneofuprising.input.CamerasManagerInputListener registerInputs
+INFO: CameraManagerInputListener registering inputs
+XI 26, 2014 11:34:26 ODP. cz.ascaria.network.ClientManager$CentralClientListener userProfileMessage
+INFO: User is logged in as [1; Ascaria; jarmil.sv@volny.cz; Active]
+XI 26, 2014 11:34:26 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: LoginLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:26 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: LoadingLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:27 ODP. cz.ascaria.zoneofuprising.world.BaseWorldManager worldLoaded
+INFO: World [0, Hangar, Scenes/Hangar/Hangar.j3o, Hangar] was loaded.
+XI 26, 2014 11:34:27 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager worldLoaded
+INFO: Hangar World [0, Hangar, Scenes/Hangar/Hangar.j3o, Hangar] was loaded on client [1; Ascaria; jarmil.sv@volny.cz; Active], requesting user ships.
+XI 26, 2014 11:34:27 ODP. cz.ascaria.zoneofuprising.cameras.CamerasManager$CentralClientListener userFleetMessage
+INFO: Switching cameras manager to fleet entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6]
+XI 26, 2014 11:34:27 ODP. cz.ascaria.zoneofuprising.entities.EntityFactory getCollisionShape
+WARNING: Collision model not found.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [5, Asca Space Frigate, SpaceShips/space_frigate_6] loaded on client.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: LoadingLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: MyProfileLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.cameras.CamerasManager$EntityEventsListener entityLoaded
+INFO: Switching cameras manager to loaded entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6]
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener registerInputs
+INFO: OrbitCameraInputListener registering inputs
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6] loaded on client.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [6, Asca Dark 3, SpaceShips/dark_fighter_6] loaded on client.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [7, Asca Dark 4, SpaceShips/dark_fighter_6] loaded on client.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.entities.EntityFactory getCollisionShape
+WARNING: Collision model not found.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.entities.EntityFactory getCollisionShape
+WARNING: Collision model not found.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [2, Asca SciFi Fighter MK, SpaceShips/scifi_fighter_mk] loaded on client.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [8, Asca MK 2, SpaceShips/scifi_fighter_mk] loaded on client.
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: MyProfileLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:28 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: ServerListLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: ServerListLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: LoadingLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.BaseWorldManager worldUnloaded
+INFO: World [0, Hangar, Scenes/Hangar/Hangar.j3o, Hangar] was unloaded.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [2, Asca SciFi Fighter MK, SpaceShips/scifi_fighter_mk] unloaded on client.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [8, Asca MK 2, SpaceShips/scifi_fighter_mk] unloaded on client.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [6, Asca Dark 3, SpaceShips/dark_fighter_6] unloaded on client.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [7, Asca Dark 4, SpaceShips/dark_fighter_6] unloaded on client.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [5, Asca Space Frigate, SpaceShips/space_frigate_6] unloaded on client.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.cameras.CamerasManager$EntityEventsListener entityUnloaded
+INFO: Reseting cameras manager.
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener clearInputs
+INFO: OrbitCameraInputListener clearing inputs
+XI 26, 2014 11:34:29 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6] unloaded on client.
+XI 26, 2014 11:34:30 ODP. cz.ascaria.zoneofuprising.entities.EntityFactory getCollisionShape
+WARNING: Collision model not found.
+XI 26, 2014 11:34:30 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [12, Eagle I, SpaceShips/dark_fighter_6] loaded on client.
+XI 26, 2014 11:34:30 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [14, Falcon I, SpaceShips/space_frigate_6] loaded on client.
+XI 26, 2014 11:34:30 ODP. cz.ascaria.zoneofuprising.entities.EntityFactory getCollisionShape
+WARNING: Collision model not found.
+XI 26, 2014 11:34:30 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [13, Hawk I, SpaceShips/scifi_fighter_mk] loaded on client.
+XI 26, 2014 11:34:31 ODP. cz.ascaria.zoneofuprising.world.BaseWorldManager worldLoaded
+INFO: World [3, SpaceStation, Scenes/SpaceStation/SpaceStation.j3o, Gameplay] was loaded.
+XI 26, 2014 11:34:31 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager worldLoaded
+INFO: Gameplay World [3, SpaceStation, Scenes/SpaceStation/SpaceStation.j3o, Gameplay] was loaded on client [1; Ascaria; jarmil.sv@volny.cz; Active], requesting respawn.
+XI 26, 2014 11:34:31 ODP. cz.ascaria.zoneofuprising.entities.ClientEntitiesManager respawn
+INFO: Requesting respawn for user profile: [1; Ascaria; jarmil.sv@volny.cz; Active]
+XI 26, 2014 11:34:31 ODP. cz.ascaria.zoneofuprising.cameras.CamerasManager$GameClientListener loadEntityMessage
+INFO: Switching cameras manager to loaded entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6]
+XI 26, 2014 11:34:32 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: LoadingLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:32 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: HudLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:34:32 ODP. cz.ascaria.zoneofuprising.cameras.CamerasManager$EntityEventsListener entityLoaded
+INFO: Switching cameras manager to loaded entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6]
+XI 26, 2014 11:34:32 ODP. cz.ascaria.zoneofuprising.controls.UserInputControl registerInputs
+INFO: UserInputControl registering inputs
+XI 26, 2014 11:34:32 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityLoaded
+INFO: Entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6] loaded on client.
+XI 26, 2014 11:34:32 ODP. cz.ascaria.zoneofuprising.input.AimCameraInputListener registerInputs
+INFO: AimCameraInputListener registering inputs
+XI 26, 2014 11:35:17 ODP. cz.ascaria.zoneofuprising.input.AimCameraInputListener clearInputs
+INFO: AimCameraInputListener clearing inputs
+XI 26, 2014 11:35:17 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener registerInputs
+INFO: OrbitCameraInputListener registering inputs
+XI 26, 2014 11:35:39 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener clearInputs
+INFO: OrbitCameraInputListener clearing inputs
+XI 26, 2014 11:35:39 ODP. cz.ascaria.zoneofuprising.input.AimCameraInputListener registerInputs
+INFO: AimCameraInputListener registering inputs
+XI 26, 2014 11:36:07 ODP. cz.ascaria.zoneofuprising.input.AimCameraInputListener clearInputs
+INFO: AimCameraInputListener clearing inputs
+XI 26, 2014 11:36:07 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener registerInputs
+INFO: OrbitCameraInputListener registering inputs
+XI 26, 2014 11:36:20 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: HudLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:20 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: InGameMenuLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:20 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: InGameMenuLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:20 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: HudLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:22 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: HudLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:22 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: InGameMenuLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:22 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: InGameMenuLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:22 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: HudLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:36:23 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener clearInputs
+INFO: OrbitCameraInputListener clearing inputs
+XI 26, 2014 11:36:23 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener registerInputs
+INFO: OrbitCameraInputListener registering inputs
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout close
+INFO: HudLayout.close() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.gui.BaseLayout open
+INFO: LoginLayout.open() thread: Thread[LWJGL Renderer Thread,5,main]
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.world.BaseWorldManager worldUnloaded
+INFO: World [3, SpaceStation, Scenes/SpaceStation/SpaceStation.j3o, Gameplay] was unloaded.
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [14, Falcon I, SpaceShips/space_frigate_6] unloaded on client.
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [13, Hawk I, SpaceShips/scifi_fighter_mk] unloaded on client.
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [12, Eagle I, SpaceShips/dark_fighter_6] unloaded on client.
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.controls.UserInputControl clearInputs
+INFO: UserInputControl clearing inputs
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.cameras.CamerasManager$EntityEventsListener entityUnloaded
+INFO: Reseting cameras manager.
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.input.OrbitCameraInputListener clearInputs
+INFO: OrbitCameraInputListener clearing inputs
+XI 26, 2014 11:37:03 ODP. cz.ascaria.zoneofuprising.world.ClientWorldManager entityUnloaded
+INFO: Entity [1, Asca Dark Fighter, SpaceShips/dark_fighter_6] unloaded on client.

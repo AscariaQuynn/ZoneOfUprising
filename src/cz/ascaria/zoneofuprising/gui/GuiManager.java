@@ -6,6 +6,7 @@ package cz.ascaria.zoneofuprising.gui;
 
 import com.jme3.app.state.AppStateManager;
 import com.jme3.input.event.MouseButtonEvent;
+import com.jme3.input.event.MouseMotionEvent;
 import com.jme3.math.Vector2f;
 import com.jme3.network.Client;
 import com.jme3.network.Message;
@@ -66,7 +67,7 @@ public class GuiManager {
         this.guiNode = guiNode;
     }
 
-    public void initialize(AppStateManager stateManager, ZoneOfUprising app) {
+    public void initialize(AppStateManager stateManager, final ZoneOfUprising app) {
         this.app = app;
         this.stateManager = stateManager;
         this.worldManager = (ClientWorldManager)app.getWorldManager();
@@ -75,7 +76,20 @@ public class GuiManager {
             throw new IllegalStateException("World Manager not found.");
         }
 
-        screen = new Screen(app);
+        screen = new Screen(app) {
+            @Override
+            public void onMouseButtonEvent(MouseButtonEvent evt) {
+                if(app.getInputManager().isCursorVisible()) {
+                    super.onMouseButtonEvent(evt);
+                }
+            }
+            @Override
+            public void onMouseMotionEvent(MouseMotionEvent evt) {
+                if(app.getInputManager().isCursorVisible()) {
+                    super.onMouseMotionEvent(evt);
+                }
+            }
+        };
         screen.setUseUIAudio(true);
         screen.setUIAudioVolume(app.getAudioManager().getGuiVolume());
         guiNode.addControl(screen);

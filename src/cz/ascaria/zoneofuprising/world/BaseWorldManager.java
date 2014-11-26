@@ -6,7 +6,6 @@ package cz.ascaria.zoneofuprising.world;
 
 import com.jme3.app.Application;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.asset.AssetEventListener;
 import com.jme3.asset.AssetManager;
 import com.jme3.asset.DesktopAssetManager;
 import com.jme3.audio.AudioNode;
@@ -24,6 +23,8 @@ import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.post.FilterPostProcessor;
 import com.jme3.post.filters.BloomFilter;
+import com.jme3.post.filters.TranslucentBucketFilter;
+import com.jme3.post.ssao.SSAOFilter;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Geometry;
@@ -31,9 +32,8 @@ import com.jme3.scene.Node;
 import com.jme3.scene.SceneGraphVisitor;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.control.Control;
+import com.jme3.shadow.DirectionalLightShadowFilter;
 import com.jme3.shadow.DirectionalLightShadowRenderer;
-import com.jme3.system.JmeSystem;
-import com.jme3.system.JmeSystemDelegate;
 import cz.ascaria.network.Console;
 import cz.ascaria.zoneofuprising.Main;
 import cz.ascaria.zoneofuprising.ZoneOfUprising;
@@ -89,10 +89,8 @@ abstract public class BaseWorldManager extends BulletAppState implements WorldEv
 
     protected AmbientLight ambientLight;
     protected DirectionalLight sun;
-    final protected static int SHADOWMAP_SIZE = 1024;
-    final protected static int NB_SPLITS = 4;
-    protected FilterPostProcessor fpp;
     protected DirectionalLightShadowRenderer dlsr;
+    protected FilterPostProcessor fpp;
 
     private PhysicsInputListener listener;
 
@@ -133,24 +131,28 @@ abstract public class BaseWorldManager extends BulletAppState implements WorldEv
         }});
         rootNode.addLight(sun = new DirectionalLight() {{
             setColor(ColorRGBA.White.mult(1.3f));
-            setDirection(new Vector3f(0.5f, -0.5f, 0.5f).normalizeLocal());
+            setDirection(new Vector3f(-0.5f, -0.5f, -0.5f).normalizeLocal());
         }});
+
         // Add shadows
-        viewPort.addProcessor(fpp = new FilterPostProcessor(assetManager) {{
-            //addFilter(new SSAOFilter(12.94f, 43.92f, 0.33f, 0.61f));
-            addFilter(new BloomFilter(BloomFilter.GlowMode.Objects) {{
-                setDownSamplingFactor(2.0f); 
-                setBloomIntensity(2f);
-                setBlurScale(1.5f);
-            }});
-            /*addFilter(new DirectionalLightShadowFilter(assetManager, BaseWorldManager.SHADOWMAP_SIZE, BaseWorldManager.NB_SPLITS) {{
-                setLight(BaseWorldManager.this.sun);
-                setEnabled(true);
-            }});*/
+        dlsr = new DirectionalLightShadowRenderer(assetManager, 2048, 4);
+        dlsr.setLight(sun);
+        dlsr.setShadowZExtend(500f);
+        viewPort.addProcessor(dlsr);
+        fpp = new FilterPostProcessor(assetManager);
+        fpp.addFilter(new SSAOFilter(12.94f, 43.92f, 0.33f, 0.61f));
+        fpp.addFilter(new BloomFilter(BloomFilter.GlowMode.Objects) {{
+            setDownSamplingFactor(2.0f);
+            setBloomIntensity(2f);
+            setBlurScale(1.5f);
         }});
-        /*viewPort.addProcessor(dlsr = new DirectionalLightShadowRenderer(assetManager, BaseWorldManager.SHADOWMAP_SIZE, BaseWorldManager.NB_SPLITS) {{
-            setLight(BaseWorldManager.this.sun);
+        /*fpp.addFilter(new DirectionalLightShadowFilter(assetManager, 2048, 4) {{
+            setLight(sun);
+            setEnabled(true);
+            setShadowZExtend(500f);
         }});*/
+        fpp.addFilter(new TranslucentBucketFilter(true));
+        viewPort.addProcessor(fpp);
 
         // Initialize Run/Pause independent stuff
         listener = new PhysicsInputListener(inputManager);
@@ -174,10 +176,10 @@ abstract public class BaseWorldManager extends BulletAppState implements WorldEv
         missilesManager = null;
 
         // Remove shadows
+        viewPort.removeProcessor(dlsr);
+        dlsr = null;
         viewPort.removeProcessor(fpp);
         fpp = null;
-        /*viewPort.removeProcessor(dlsr);
-        dlsr = null;*/
         // Remove lights
         rootNode.removeLight(ambientLight);
         ambientLight = null;
@@ -419,7 +421,7 @@ abstract public class BaseWorldManager extends BulletAppState implements WorldEv
      * Add global light to world.
      * @param light
      */
-    public void addGlobalLight(Light light) {
+    public void addGlobalLight(final Light light) {
         rootNode.addLight(light);
     }
 

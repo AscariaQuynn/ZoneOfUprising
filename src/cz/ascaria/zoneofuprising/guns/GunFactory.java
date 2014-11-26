@@ -65,8 +65,8 @@ public class GunFactory {
         GunManagerControl gunManager = entity.getControl(GunManagerControl.class);
         if(null != gunManager && gunManager.getGunSlotsCount() > 0) {
 
-            gunManager.addGun(0, new DarkFighter6WingGun(new Projectile545()));
-            gunManager.addGun(1, new DarkFighter6WingGun(new Projectile545()));
+            gunManager.addGun(0, new DarkFighter6WingGun(new LaserProjectile(ColorRGBA.Blue)));
+            gunManager.addGun(1, new DarkFighter6WingGun(new LaserProjectile(ColorRGBA.Green)));
             gunManager.addGun(2, new DarkFighter6WingGun(new LaserProjectile(ColorRGBA.Red)));
             gunManager.addGun(3, new Turret2(new LaserProjectile(ColorRGBA.Yellow)));
 /*

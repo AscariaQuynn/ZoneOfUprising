@@ -5,7 +5,6 @@
 package cz.ascaria.zoneofuprising.cameras;
 
 import com.jme3.audio.Listener;
-import com.jme3.bullet.control.RigidBodyControl;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
@@ -18,6 +17,7 @@ import cz.ascaria.zoneofuprising.ZoneOfUprising;
 import cz.ascaria.zoneofuprising.controls.ControlAdapter;
 import cz.ascaria.zoneofuprising.input.AimCameraInputListener;
 import cz.ascaria.zoneofuprising.utils.DeltaTimer;
+import cz.ascaria.zoneofuprising.utils.NodeHelper;
 
 /**
  * Sends request to server to rotate entity towards camera.
@@ -32,6 +32,7 @@ public class AimCamera extends ControlAdapter implements CameraControl
 
     private ClientWrapper gameClient;
     private EntityProfile entityProfile;
+    private Spatial entitySpatial;
 
     private float sensivity;
     private float distance = 10f;
@@ -67,12 +68,7 @@ public class AimCamera extends ControlAdapter implements CameraControl
             listener = new AimCameraInputListener(this, camerasManager, app);
             listener.registerInputs();
 
-            RigidBodyControl rigidBody = null != spatial ? spatial.getControl(RigidBodyControl.class) : null;
-            if(null != rigidBody) {
-                cam.setRotation(rigidBody.getPhysicsRotation());
-            } else if(null != spatial) {
-                cam.setRotation(spatial.getWorldRotation());
-            }
+            cam.setRotation(entitySpatial.getWorldRotation());
 
         } else if(null != listener) {
             listener.clearInputs();
@@ -101,7 +97,12 @@ public class AimCamera extends ControlAdapter implements CameraControl
                 throw new IllegalArgumentException("Spatial '" + spatial.getName() + "' does not have user data key 'Distance'.");
             }
             distance = (Float)spatial.getUserData("Distance");
+            entitySpatial = NodeHelper.tryFindEntity(spatial);
+            if(null == entitySpatial) {
+                throw new IllegalArgumentException("Spatial '" + spatial.getName() + "' does not have parent.");
+            }
         } else {
+            entitySpatial = null;
             distance = 10f;
         }
     }    
@@ -134,7 +135,7 @@ public class AimCamera extends ControlAdapter implements CameraControl
                 EntityAnalogMessage m = new EntityAnalogMessage();
                 m.setEntityName(entityProfile.getName());
                 m.requiredRotation.set(requiredRotation);
-                m.gunsAimVector.set(camerasManager.getGunsAimVector(1000f));
+                m.gunsAimVector.set(camerasManager.getGunsAimVector(1000f), entitySpatial.getWorldTranslation());
                 // If message is not empty, send
                 if(!m.isEmpty()) {
                     gameClient.send(m);

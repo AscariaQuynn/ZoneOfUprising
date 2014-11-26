@@ -9,6 +9,7 @@ import com.jme3.math.Ray;
 import com.jme3.math.Vector3f;
 import com.jme3.network.AbstractMessage;
 import com.jme3.network.serializing.Serializable;
+import cz.ascaria.zoneofuprising.utils.MovableVector;
 import java.util.HashMap;
 
 /**
@@ -38,14 +39,14 @@ public class EntityAnalogMessage extends AbstractMessage implements AnalogMessag
     public Vector3f torque = new Vector3f();
 
     /**
-     * Required rotation, first used by AimCamera
+     * Required rotation, where entity should rotate
      */
     public Quaternion requiredRotation = new Quaternion();
 
     /**
-     * Guns aim vector, first used by AimCamera
+     * Guns aim vector, where guns should be rotated at once
      */
-    public Vector3f gunsAimVector = new Vector3f();
+    public MovableVector gunsAimVector = new MovableVector();
     
     /**
      * Creates entity analog message that goes through unreliable channel
@@ -76,7 +77,7 @@ public class EntityAnalogMessage extends AbstractMessage implements AnalogMessag
     }
 
     public boolean isEmpty() {
-        return rays.isEmpty() && force.equals(Vector3f.ZERO) && torque.equals(Vector3f.ZERO) && requiredRotation.equals(Quaternion.IDENTITY) && gunsAimVector.equals(Vector3f.ZERO);
+        return rays.isEmpty() && force.equals(Vector3f.ZERO) && torque.equals(Vector3f.ZERO) && requiredRotation.isIdentity() && gunsAimVector.isEmpty();
     }
 
     /**

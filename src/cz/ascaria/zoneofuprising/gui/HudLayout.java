@@ -101,10 +101,11 @@ public class HudLayout extends BaseLayout {
         inputManager.setCursorVisible(false);
 
         // Create panel
-        panel = new Panel(screen, Vector2f.ZERO, dimensions, Vector4f.ZERO, null);
+        panel = new Panel(screen, Vector2f.ZERO, dimensions);
+        panel.setAsContainerOnly();
         panel.setIsMovable(false);
         panel.setIsResizable(false);
-        panel.setIgnoreMouse(true);
+        //panel.setIgnoreMouse(true);
 
         createGunSight();
 
@@ -136,7 +137,7 @@ public class HudLayout extends BaseLayout {
 
     public void labelsIgnoreMouse() {
         for(Label label : labels.values()) {
-            label.setIgnoreMouse(true);
+            //label.setIgnoreMouse(true);
         }
     }
 
@@ -152,7 +153,7 @@ public class HudLayout extends BaseLayout {
         gunSight.setGlobalAlpha(0.75f);
         gunSight.setIsResizable(false);
         gunSight.setIsMovable(false);
-        gunSight.setIgnoreMouse(true);
+        //gunSight.setIgnoreMouse(true);
 
         panel.addChild(gunSight);
     }
@@ -197,7 +198,7 @@ public class HudLayout extends BaseLayout {
         chatBox.setSendKey(KeyInput.KEY_RETURN);
         chatBox.setIsResizable(false);
         chatBox.setIsMovable(false);
-        chatBox.setIgnoreMouse(true);
+        //chatBox.setIgnoreMouse(true);
 
         panel.addChild(chatBox);
     }
@@ -211,7 +212,7 @@ public class HudLayout extends BaseLayout {
         Panel dashBoard = new Panel(screen, new Vector2f(dimensions.x - 415f, dimensions.y - 90f), new Vector2f(400f, 75f));
         dashBoard.setIsResizable(false);
         dashBoard.setIsMovable(false);
-        dashBoard.setIgnoreMouse(true);
+        //dashBoard.setIgnoreMouse(true);
 
         LightsControl lightsControl = null != playerEntity ? playerEntity.getNode().getControl(LightsControl.class) : null;
         Button spotlights = new ButtonAdapter(screen, new Vector2f(5f, 5f)) {
@@ -228,7 +229,7 @@ public class HudLayout extends BaseLayout {
         }
         spotlights.setText("Spotlights");
         spotlights.setIsToggleButton(true);
-        spotlights.setIgnoreMouse(true);
+        //spotlights.setIgnoreMouse(true);
         dashBoard.addChild(spotlights);
 
         Button pointlights = new ButtonAdapter(screen, new Vector2f(110f, 5f)) {
@@ -245,7 +246,7 @@ public class HudLayout extends BaseLayout {
         }
         pointlights.setText("Pointlights");
         pointlights.setIsToggleButton(true);
-        pointlights.setIgnoreMouse(true);
+        //pointlights.setIgnoreMouse(true);
         dashBoard.addChild(pointlights);
 
         Button rotationControl = new ButtonAdapter(screen, new Vector2f(5f, 40f)) {
@@ -263,7 +264,7 @@ public class HudLayout extends BaseLayout {
         rotationControl.setWidth(150f);
         rotationControl.setText("Rotation Control");
         rotationControl.setIsToggleButton(true);
-        rotationControl.setIgnoreMouse(true);
+        //rotationControl.setIgnoreMouse(true);
         dashBoard.addChild(rotationControl);
 
         Button movementControl = new ButtonAdapter(screen, new Vector2f(160f, 40f)) {
@@ -281,7 +282,7 @@ public class HudLayout extends BaseLayout {
         movementControl.setWidth(150f);
         movementControl.setText("Movement Control");
         movementControl.setIsToggleButton(true);
-        movementControl.setIgnoreMouse(true);
+        //movementControl.setIgnoreMouse(true);
         dashBoard.addChild(movementControl);
 
         panel.addChild(dashBoard);
@@ -295,7 +296,7 @@ public class HudLayout extends BaseLayout {
         Panel info = new Panel(screen, new Vector2f(dimensions.x - 315f, 15f), new Vector2f(300f, 300f));
         info.setIsResizable(false);
         info.setIsMovable(false);
-        info.setIgnoreMouse(true);
+        //info.setIgnoreMouse(true);
 
         Label iLinearSpeed = new Label(screen, new Vector2f(30f, 30f), new Vector2f(240f, 11f));
         iLinearSpeed.setText("Linear Speed:");
@@ -338,7 +339,7 @@ public class HudLayout extends BaseLayout {
         targetWindow.setWindowTitle("Target: " + target.getUserData("entityName"));
         targetWindow.setWindowIsMovable(true);
         targetWindow.setIsResizable(false);
-        targetWindow.setIgnoreMouse(true);
+        //targetWindow.setIgnoreMouse(true);
 
         Label iTargetHp = new Label(screen, new Vector2f(15f, 15f), new Vector2f(260f, 11f));
         iTargetHp.setText("HP:");
@@ -361,7 +362,7 @@ public class HudLayout extends BaseLayout {
         targetMark.setGlobalAlpha(0.75f);
         targetMark.setIsResizable(false);
         targetMark.setIsMovable(false);
-        targetMark.setIgnoreMouse(true);
+        //targetMark.setIgnoreMouse(true);
 
         panel.addChild(targetMark);
 

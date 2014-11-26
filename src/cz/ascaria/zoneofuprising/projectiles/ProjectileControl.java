@@ -163,16 +163,18 @@ public class ProjectileControl extends AbstractControl {
                     CollisionResults results = new CollisionResults();
                     // TODO: refactor
                     Ray ray = new Ray(spatial.getWorldTranslation(), linearVelocity.lengthSquared() > 0f ? linearVelocity.normalize() : spatial.getWorldRotation().getRotationColumn(2));
-                    ray.setLimit(linearVelocity.lengthSquared() > 0f ? linearVelocity.length() * tpf : 600f);
+                    //ray.setLimit(linearVelocity.lengthSquared() > 0f ? linearVelocity.length() * tpf : 600f);
                     //rigidBody.getPhysicsSpace().rayTest(linearVelocity, linearVelocity);
                     for(Spatial collidable : collidables) {
                         collidable.collideWith(ray, results);
                     }
                     // If we hit something
-                    if(results.size() > 0) {
+                    CollisionResult closestCollsion = results.getClosestCollision();
+                    if(null != closestCollsion && closestCollsion.getDistance() <= linearVelocity.length() * tpf) {
+                        // TODO length squared check asi nema smysl
                         if(linearVelocity.lengthSquared() != 0f) {
                             // TODO: laser to dava do pici
-                            setPosition(results.getClosestCollision().getContactPoint());
+                            setPosition(closestCollsion.getContactPoint());
                         }
                         doDamage(results.getClosestCollision());
                         collision(LOUD_COLLISION);

@@ -31,9 +31,9 @@ public class LightsFactory {
                 if(spatial instanceof Node && "SpotLight".equals(spatial.getName())) {
                     try {
                         SpotLight shipLight = new SpotLight();
-                        shipLight.setSpotRange(500f);
-                        shipLight.setSpotInnerAngle(0.3f);
-                        shipLight.setSpotOuterAngle(0.4f);
+                        shipLight.setSpotRange(300f);
+                        shipLight.setSpotInnerAngle(0.1f);
+                        shipLight.setSpotOuterAngle(0.2f);
                         LightControl lightControl = new LightControl(shipLight);
                         spatial.addControl(lightControl);
                         lightsControl.addLight(shipLight);

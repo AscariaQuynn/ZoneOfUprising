@@ -262,7 +262,7 @@ final public class ZoneOfUprising extends Application {
         viewPort.attachScene(rootNode);
         guiViewPort.attachScene(guiNode);
 
-        cam.setFrustumFar(1E5f);
+        cam.setFrustumFar(1e5f);
 
         // Register all central messages once
         CentralMessagesRegistrator.registerMessages();

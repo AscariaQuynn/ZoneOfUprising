@@ -7,6 +7,7 @@ package cz.ascaria.zoneofuprising.engines;
 import com.jme3.bullet.control.RigidBodyControl;
 import com.jme3.effect.ParticleEmitter;
 import com.jme3.math.Vector3f;
+import com.jme3.scene.Node;
 import com.jme3.scene.SceneGraphVisitor;
 import com.jme3.scene.Spatial;
 import cz.ascaria.network.messages.ActionMessage;
@@ -99,17 +100,19 @@ public class ThrustersControl extends ControlAdapter {
         this.mass = rigidBody.getMass();
 
         // Prepare thrusters
-        spatial.depthFirstTraversal(new SceneGraphVisitor() {
-            public void visit(Spatial spatial) {
-                if(spatial instanceof ParticleEmitter) {
-                    if(null == spatial.getName()) {
-                        spatial.removeFromParent();
-                    } else {
-                        add(spatial.getName(), new Thruster((ParticleEmitter)spatial, isServer));
+        if(spatial instanceof Node && null != ((Node)spatial).getChild("Thrusters")) {
+            ((Node)spatial).getChild("Thrusters").depthFirstTraversal(new SceneGraphVisitor() {
+                public void visit(Spatial spatial) {
+                    if(spatial instanceof ParticleEmitter && null != spatial.getName()) {
+                        if(null == spatial.getName()) {
+                            spatial.removeFromParent();
+                        } else if(spatial.getName().contains("Thruster")) {
+                            add(spatial.getName(), new Thruster((ParticleEmitter)spatial, isServer));
+                        }
                     }
                 }
-            }
-        });
+            });
+        }
     }
 
     /**

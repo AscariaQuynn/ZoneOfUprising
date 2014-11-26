@@ -21,6 +21,8 @@ import cz.ascaria.zoneofuprising.entities.Entity;
 import cz.ascaria.zoneofuprising.projectiles.ProjectileBuilder;
 import cz.ascaria.zoneofuprising.projectiles.ProjectileControl;
 import cz.ascaria.zoneofuprising.projectiles.ProjectileLoaded;
+import cz.ascaria.zoneofuprising.utils.DeltaTimer;
+import cz.ascaria.zoneofuprising.utils.MovableVector;
 import cz.ascaria.zoneofuprising.utils.NodeHelper;
 import cz.ascaria.zoneofuprising.world.BaseWorldManager;
 import cz.ascaria.zoneofuprising.world.ServerWorldManager;
@@ -52,8 +54,9 @@ public class GunManagerControl extends AbstractControl {
     private HashMap<String, GunControl> gunControls = new HashMap<String, GunControl>();
     private HashMap<String, Spatial> barrels = new HashMap<String, Spatial>();
 
-    private float aimVectorTimeout = 0f;
-    private Vector3f aimVector;
+    private MovableVector aimVector = new MovableVector();
+    private DeltaTimer aimTimeout = new DeltaTimer(3f, DeltaTimer.SECONDS);
+
     private Spatial lockedTarget;
     private boolean fire = false;
 
@@ -266,15 +269,11 @@ public class GunManagerControl extends AbstractControl {
 
     /**
      * Sets aim vector to guns to look at. Resets automatically after 3 seconds if not refreshed.
-     * @param aimVector 
+     * @param aimVector
      */
-    public void setAimVector(Vector3f aimVector) {
-        if(null == this.aimVector) {
-            this.aimVector = aimVector;
-        } else {
-            this.aimVector.set(aimVector);
-        }
-        aimVectorTimeout = 3f;
+    public void setAimVector(MovableVector aimVector) {
+        this.aimVector.set(aimVector);
+        aimTimeout.reset();
     }
 
     /**
@@ -347,8 +346,7 @@ public class GunManagerControl extends AbstractControl {
                     // Broadcast projectile
                     // TODO: refactor
                     if(isServer) {
-                        String entityName = spatial.getUserData("entityName");
-                        ((ServerWorldManager)worldManager).projectileBroadcast(entityName, gunName, barrelName, projectileName);
+                        ((ServerWorldManager)worldManager).projectileBroadcast(entity.getName(), gunName, barrelName, projectileName);
                     }
                 }
             });
@@ -366,8 +364,9 @@ public class GunManagerControl extends AbstractControl {
                 GunControl gunControl = entry.getValue();
                 if(null != lockedTarget) {
                     gunControl.aim(getLinearVelocity(), lockedTarget);
-                } else if(null != aimVector) {
-                    gunControl.aim(aimVector);
+                } else if(!aimVector.isEmpty()) {
+                    aimVector.update(spatial.getWorldTranslation());
+                    gunControl.aim(aimVector.get());
                 }
                 if(fire && !gunControl.isCooldown()) {
                     gunControl.fire(entry.getKey() /* key je gun name*/);
@@ -375,13 +374,9 @@ public class GunManagerControl extends AbstractControl {
             }
         }
         // Aim vector timeout
-        if(null != aimVector && null == lockedTarget) {
-            aimVectorTimeout -= tpf;
-            if(aimVectorTimeout <= 0f) {
-                aimVectorTimeout = 0f;
-                aimVector = null;
-                unlockTarget();
-            }
+        if(aimTimeout.updateIsReached(tpf)) {
+            aimVector.reset();
+            unlockTarget();
         }
     }
 
@@ -432,7 +427,7 @@ public class GunManagerControl extends AbstractControl {
      */
     public void analogMessage(EntityAnalogMessage m) {
         // Apply guns aim vector
-        if(!m.gunsAimVector.equals(Vector3f.ZERO)) {
+        if(!m.gunsAimVector.isEmpty()) {
             setAimVector(m.gunsAimVector);
         }
     }

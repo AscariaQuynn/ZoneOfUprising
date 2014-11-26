@@ -7,6 +7,7 @@ package cz.ascaria.zoneofuprising.cameras;
 import com.jme3.app.state.AppStateManager;
 import com.jme3.collision.CollisionResults;
 import com.jme3.input.InputManager;
+import com.jme3.math.Quaternion;
 import com.jme3.math.Ray;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
@@ -33,6 +34,7 @@ import cz.ascaria.zoneofuprising.entities.EntityEventsAdapter;
 import cz.ascaria.zoneofuprising.input.CamerasManagerInputListener;
 import cz.ascaria.zoneofuprising.world.ClientWorldManager;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.concurrent.Callable;
 import java.util.logging.Level;
 
@@ -47,7 +49,7 @@ public class CamerasManager {
     private InputManager inputManager;
     private ClientWorldManager worldManager;
     private ClientEntitiesManager entitiesManager;
-    private HashMap<String, Spatial> targetables;
+    private LinkedList<Spatial> collidables;
     private ClientWrapper gameClient;
 
     private CamerasManagerInputListener camerasListener;
@@ -77,7 +79,7 @@ public class CamerasManager {
         this.inputManager = app.getInputManager();
         this.worldManager = (ClientWorldManager)app.getWorldManager();
         this.entitiesManager = (ClientEntitiesManager)app.getEntitiesManager();
-        this.targetables = app.getWorldManager().targetables;
+        this.collidables = app.getWorldManager().collidables;
         this.gameClient = app.getGameClient();
 
         centralClientListener = new CentralClientListener();
@@ -121,15 +123,16 @@ public class CamerasManager {
 
     /**
      * Returns nearest collision's contact point to targetables.
-     * @param ray
+     * @param length
      * @return
      */
     public Vector3f getGunsAimVector(float length) {
-        if(!targetables.isEmpty()) {
+        // Try to hit something
+        if(!collidables.isEmpty()) {
             Ray ray = rayFromCamera(length);
             CollisionResults cr = new CollisionResults();
-            for(Spatial targetable : targetables.values()) {
-                targetable.collideWith(ray, cr);
+            for(Spatial collidable : collidables) {
+                collidable.collideWith(ray, cr);
             }
             if(cr.size() > 0) {
                 // We have point to aim to
@@ -138,6 +141,15 @@ public class CamerasManager {
         }
         // Fallback
         return cam.getLocation().add(cam.getRotation().mult(new Vector3f(0f, 0f, length)));
+
+        /*
+        // Transform contact point into direction where contact point is
+        Vector3f contactDirection = new Vector3f(contactPoint).subtractLocal(cam.getLocation()).normalizeLocal();
+        // Calculate quaternion rotation from contact direction
+        Quaternion contactRotation = new Quaternion();
+        contactRotation.lookAt(contactDirection, cam.getUp());
+        // Return computed contact rotation
+        return contactRotation;*/
     }
 
     /**
