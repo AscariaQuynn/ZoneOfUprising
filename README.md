@@ -11,7 +11,7 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
-revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot, ktere bude nepretrzite nastavovat v zavislosti na tom, jak moc je smer lodi mimo od pozadovaneho smeru (lod driftuje), nebo je jeji cumak mimo od pozadovane rotace (lod kouka jinam nez chceme)
+- revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot, ktere bude nepretrzite nastavovat v zavislosti na tom, jak moc je smer lodi mimo od pozadovaneho smeru (lod driftuje), nebo je jeji cumak mimo od pozadovane rotace (lod kouka jinam nez chceme)
 - zbavit se getrotationcolumn a nahradit to za q.mult(vector_z...)
 - pri zmacknuti dvou sipek do opacnych stran musi byt vysledek 0 a ne +/-1
 - po reloadu sveta obcas nefunguje detekce kolizi
@@ -25,26 +25,26 @@ revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot,
 - projektilu se predava collidables, projektilove collidables by melo byt schopno vyradit svou entitu z detekce kolizi. jelikoz ale nemuzu pole zduplikovat, protoze by tam zustaly znicene lode, tak pri prochazeni collidables a aplikovani collidewith, musim pridat podminku co odignoruje sama sebe
 - collidables zvazit udelat jako pair entityprofile-entity a vubec vytvorit a zavest entityprofile-entity pairy navazany na entity name, pak to pujde lehce narvat do systemu a melo by z toho jit i urcovat, jestli je hrac naloadovany ale jeho entita je znicena, cili respawn
 
-x ok - rotacni pohyb nastavit nejake brzdici minimum aby se brzdici sila nezmensovala do nekonecna
-ok - doresit brzdeni bocniho pohybu
-ok - lodicka bude mit maly zapinatelny point light kolem sebe, aby byla schopna osvetlit nejblizsi okoli, napriklad v jeskyni v asteroidu
-ok - lodicka bude mit spotlight na osvetlovani predku
-ok - zvazit jestli neodebrat nejake funkce z shipcontrol a nepremistit je do samostatych kontrol
-ok - strileni zkusit vykoumat jako to navrhuje normen hansen, ale nechapu porad jak to mysli
+- x ok - rotacni pohyb nastavit nejake brzdici minimum aby se brzdici sila nezmensovala do nekonecna
+- ok - doresit brzdeni bocniho pohybu
+- ok - lodicka bude mit maly zapinatelny point light kolem sebe, aby byla schopna osvetlit nejblizsi okoli, napriklad v jeskyni v asteroidu
+- ok - lodicka bude mit spotlight na osvetlovani predku
+- ok - zvazit jestli neodebrat nejake funkce z shipcontrol a nepremistit je do samostatych kontrol
+- ok - strileni zkusit vykoumat jako to navrhuje normen hansen, ale nechapu porad jak to mysli
      http://hub.jmonkeyengine.org/forum/topic/predict-target-location-at-projectiles-arrival/
-ok - brzdeni bocniho pohybu ma nastarosti vylucne engines control
-ok - otaceni za cilem ma nastarosti engines control, ktera vraci dot product z rotace (getRequiredRotationDot)
-ok - rotation pid nema nastarosti brzdeni rotace, to se bude vypocitavat uvnitr engines control
-ok - aimcontrol pouziva engines control na zamireni pozadovane rotace lodi tzn bude jen nastavovat required rotation motorum
-ok - movement compensator nesmi prekrocit hodnotu linearni hybnosti
-ok - rotation compensator nesmi prekrocit hodnotu angularni hybnosti
-ok - svet se bude nacitat stejne jako entita, pomoci requestWorld (sjednotit chovani s entitou), po obdrzeni server profile si server zazada o svet a bude mu vracen selected svet
-ok - v severovy konzoly udelat prikaz na vypsani dostupnych svetu a prikaz na nacteni sveta
-ok nekope - nejdriv asi reloadovani sveta kopne vsechny entity, ale mohlo by jim to zobrazit loading a nacit rovnou jiny svet taky
-ok - kdyz mam malo hp, pustit sirenu, jen na svy vlastni lodi
-ok - class entity co bude obsahovat spatial a entityprofile, zvazit jak udelat entityupdater
-x ok - class entity bude umet respawnovat
-ok - restart world ve world managerovi, zachova entity s entityprofile ale uz ne spatial
+- ok - brzdeni bocniho pohybu ma nastarosti vylucne engines control
+- ok - otaceni za cilem ma nastarosti engines control, ktera vraci dot product z rotace (getRequiredRotationDot)
+- ok - rotation pid nema nastarosti brzdeni rotace, to se bude vypocitavat uvnitr engines control
+- ok - aimcontrol pouziva engines control na zamireni pozadovane rotace lodi tzn bude jen nastavovat required rotation motorum
+- ok - movement compensator nesmi prekrocit hodnotu linearni hybnosti
+- ok - rotation compensator nesmi prekrocit hodnotu angularni hybnosti
+- ok - svet se bude nacitat stejne jako entita, pomoci requestWorld (sjednotit chovani s entitou), po obdrzeni server profile si server zazada o svet a bude mu vracen selected svet
+- ok - v severovy konzoly udelat prikaz na vypsani dostupnych svetu a prikaz na nacteni sveta
+- ok nekope - nejdriv asi reloadovani sveta kopne vsechny entity, ale mohlo by jim to zobrazit loading a nacit rovnou jiny svet taky
+- ok - kdyz mam malo hp, pustit sirenu, jen na svy vlastni lodi
+- ok - class entity co bude obsahovat spatial a entityprofile, zvazit jak udelat entityupdater
+- x ok - class entity bude umet respawnovat
+- ok - restart world ve world managerovi, zachova entity s entityprofile ale uz ne spatial
 
 
 Phase II:
