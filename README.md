@@ -8,7 +8,7 @@ my first project, readme maybe later. no one will read it
 
 
 
-
+TODO:
 
 - vpravo dole v hudu 3d radar s cilema
 - vlevo dole v hudu nejaka pristrojova deska a na ni toggle buttony pro zbranove mody
