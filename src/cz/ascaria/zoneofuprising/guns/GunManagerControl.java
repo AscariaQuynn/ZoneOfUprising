@@ -359,6 +359,11 @@ public class GunManagerControl extends AbstractControl {
         if(null != lockedTarget && null == lockedTarget.getParent()) {
             unlockTarget();
         }
+        // Aim vector timeout
+        if(null == lockedTarget && aimTimeout.updateIsReached(tpf)) {
+            aimVector.reset();
+            unlockTarget();
+        }
         if(fire || null != lockedTarget || null != aimVector) {
             for(Map.Entry<String, GunControl> entry : gunControls.entrySet()) {
                 GunControl gunControl = entry.getValue();
@@ -372,11 +377,6 @@ public class GunManagerControl extends AbstractControl {
                     gunControl.fire(entry.getKey() /* key je gun name*/);
                 }
             }
-        }
-        // Aim vector timeout
-        if(aimTimeout.updateIsReached(tpf)) {
-            aimVector.reset();
-            unlockTarget();
         }
     }
 

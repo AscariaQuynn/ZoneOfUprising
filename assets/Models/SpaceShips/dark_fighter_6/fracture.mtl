@@ -1,0 +1,380 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 27.11.2014 16:41:13
+
+newmtl jztttgkjtz
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl gfjngfgfmgfm
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl ftgtrf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl fdbnfdvsdsdgsngf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jjgggg
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jzjzf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jzttngfnnfgnf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl gnfmngh
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jztrfstgh
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl fjzjzt
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl tzktzd
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jzttngfn
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jzttngfnjftjtrf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jztttgkjtzztkjdztzkjtzd
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jztttgkjtzztkjdz
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl fdbnfdvsdsdgsgsdgsdg
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl fdbnfd
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl fdbnfdvsdsdgs
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl tzktzdkztztk
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl hfdhfgd
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl ftgtrfjtrf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jztt
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl gfgfgfs
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl ftgtrfmngf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl kztzt
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl fjzjztkjztkjtz
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+
+newmtl jzttngfnjftjtrfgfhjnfg
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg
+	map_Kd D:\Projects\ZoneOfUprising\assets\Models\SpaceShips\space_frigate_6\Map__14_Checker.jpg

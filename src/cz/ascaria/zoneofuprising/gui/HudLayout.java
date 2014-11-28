@@ -153,7 +153,7 @@ public class HudLayout extends BaseLayout {
         gunSight.setGlobalAlpha(0.75f);
         gunSight.setIsResizable(false);
         gunSight.setIsMovable(false);
-        //gunSight.setIgnoreMouse(true);
+        gunSight.setIgnoreMouse(true);
 
         panel.addChild(gunSight);
     }

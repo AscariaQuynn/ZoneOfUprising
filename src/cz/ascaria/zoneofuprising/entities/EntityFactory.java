@@ -12,6 +12,7 @@ import com.jme3.bullet.control.RigidBodyControl;
 import com.jme3.bullet.util.CollisionShapeFactory;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue;
+import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import cz.ascaria.zoneofuprising.Main;
@@ -22,6 +23,7 @@ import cz.ascaria.zoneofuprising.engines.EnginesControl;
 import cz.ascaria.zoneofuprising.engines.MovementCompensator;
 import cz.ascaria.zoneofuprising.engines.RotationCompensator;
 import cz.ascaria.zoneofuprising.engines.ThrustersControl;
+import cz.ascaria.zoneofuprising.utils.ParticleControllerHelper;
 import java.util.logging.Level;
 
 /**
@@ -113,7 +115,21 @@ public class EntityFactory {
     }
 
     private DamageControl getDamageControl(Entity entity) {
+        // Create damage control
         DamageControl damageControl = new DamageControl(entity, app);
+        if(!isServer) {
+            // Try to add fracture model
+            try {
+                Spatial spatial = entity.getNode().getChild("Geometry");
+                if(spatial instanceof Geometry) {
+                    Node fracture = (Node)app.getAssetManager().loadModel("Models/" + entity.getPath() + "/fracture.j3o");
+                    damageControl.setFracturedExplosion(ParticleControllerHelper.fracturedExplosion((Geometry)spatial, fracture));
+                }
+            } catch(Exception ex) {
+                Main.LOG.log(Level.WARNING, "Fracture model not found.");
+            }
+        }
+        // Return damage control
         return damageControl;
     }
 

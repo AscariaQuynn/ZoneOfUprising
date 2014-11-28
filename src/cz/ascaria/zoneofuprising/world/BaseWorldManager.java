@@ -21,6 +21,9 @@ import com.jme3.light.Light;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
+import com.jme3.particles.ParticleController;
+import com.jme3.particles.ParticleEmissionController;
+import com.jme3.particles.source.MeshSource;
 import com.jme3.post.FilterPostProcessor;
 import com.jme3.post.filters.BloomFilter;
 import com.jme3.post.filters.TranslucentBucketFilter;
@@ -32,7 +35,6 @@ import com.jme3.scene.Node;
 import com.jme3.scene.SceneGraphVisitor;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.control.Control;
-import com.jme3.shadow.DirectionalLightShadowFilter;
 import com.jme3.shadow.DirectionalLightShadowRenderer;
 import cz.ascaria.network.Console;
 import cz.ascaria.zoneofuprising.Main;
@@ -502,6 +504,69 @@ abstract public class BaseWorldManager extends BulletAppState implements WorldEv
                             effect.emitAllParticles();
                             // Remove emitter with delay
                             removeFromWorldWithDelay(effect, effect.getHighLife());
+                            return null; 
+                        }
+                    }); 
+                }
+            }, (int)(delay * 1000f), TimeUnit.MILLISECONDS);
+        }
+    }
+
+    /**
+     * Removes effect from hiearchy and moves it to the effects node. Emits all particles at once,
+     * and when effect ends completely, automatically removes emitter.
+     * @param effect
+     * @param delay in seconds
+     */
+    public void showEffect(final ParticleController effect) {
+        if(null != effect) {
+            // Store transform
+            Vector3f location = effect.getGeometry().getWorldTranslation();
+            Quaternion rotation = effect.getGeometry().getWorldRotation();
+            // Move to effects node
+            moveInWorld("effectsNode", effect.getGeometry());
+            // Set transform
+            if(!(effect.getSource() instanceof MeshSource)) {
+                effect.getGeometry().setLocalTranslation(location);
+                effect.getGeometry().setLocalRotation(rotation);
+            }
+            // Stop continuous emitting
+            effect.getEmissionController().setEmissionsPerSecond(0);
+            // Emit all particles
+            effect.emitAllParticles();
+            // Remove emitter with delay
+            removeFromWorldWithDelay(effect.getGeometry(), effect.getLifeMax());
+        }
+    }
+
+    /**
+     * Removes effect from hiearchy and moves it to the effects node. Emits all particles at once,
+     * and when effect ends completely, automatically removes emitter.
+     * @param effect
+     * @param delay in seconds
+     */
+    public void showEffect(final ParticleController effect, float delay) {
+        if(null != effect) {
+            // Store transform
+            Vector3f location = effect.getGeometry().getWorldTranslation();
+            Quaternion rotation = effect.getGeometry().getWorldRotation();
+            // Move to effects node
+            moveInWorld("effectsNode", effect.getGeometry());
+            // Set transform
+            if(!(effect.getSource() instanceof MeshSource)) {
+                effect.getGeometry().setLocalTranslation(location);
+                effect.getGeometry().setLocalRotation(rotation);
+            }
+            // Stop continuous emitting
+            effect.getEmissionController().setEmissionsPerSecond(0);
+            // Emit particles with delay
+            executor2.schedule(new Runnable() {
+                public void run() {
+                    app.enqueue(new Callable() {
+                        public Object call() throws Exception {
+                            effect.emitAllParticles();
+                            // Remove emitter with delay
+                            removeFromWorldWithDelay(effect.getGeometry(), effect.getLifeMax());
                             return null; 
                         }
                     }); 
