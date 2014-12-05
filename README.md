@@ -24,6 +24,7 @@ Phase I:
 - arrival pouziva engines control na ruseni bocniho pohybu a enginescontrol's rotacni dot na urceni jestli zazehnout zadni trysky bude nastavovat motorum required rotation a zazehavat trysky motoru
 - projektilu se predava collidables, projektilove collidables by melo byt schopno vyradit svou entitu z detekce kolizi. jelikoz ale nemuzu pole zduplikovat, protoze by tam zustaly znicene lode, tak pri prochazeni collidables a aplikovani collidewith, musim pridat podminku co odignoruje sama sebe
 - collidables zvazit udelat jako pair entityprofile-entity a vubec vytvorit a zavest entityprofile-entity pairy navazany na entity name, pak to pujde lehce narvat do systemu a melo by z toho jit i urcovat, jestli je hrac naloadovany ale jeho entita je znicena, cili respawn
+- synchronizovat entitu a vsechny jeji projektily v jedny msg, treba to zabrani trefovani sebe sama a cukani mezi projektilama a entitou
 
 - x ok - rotacni pohyb nastavit nejake brzdici minimum aby se brzdici sila nezmensovala do nekonecna
 - ok - doresit brzdeni bocniho pohybu
