@@ -11,8 +11,6 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
-- pri zmacknuti dvou sipek do opacnych stran musi byt vysledek 0 a ne +/-1
-- po reloadu sveta obcas nefunguje detekce kolizi
 - entitybuilder staci jeden v entity managerovi
 - dodatecny nastaveni lode jako pole v jednom argumentu
 - pridat do entity profilu zbrane jako pole
@@ -23,7 +21,11 @@ Phase I:
 - projektilu se predava collidables, projektilove collidables by melo byt schopno vyradit svou entitu z detekce kolizi. jelikoz ale nemuzu pole zduplikovat, protoze by tam zustaly znicene lode, tak pri prochazeni collidables a aplikovani collidewith, musim pridat podminku co odignoruje sama sebe
 - collidables zvazit udelat jako pair entityprofile-entity a vubec vytvorit a zavest entityprofile-entity pairy navazany na entity name, pak to pujde lehce narvat do systemu a melo by z toho jit i urcovat, jestli je hrac naloadovany ale jeho entita je znicena, cili respawn
 - synchronizovat entitu a vsechny jeji projektily v jedny msg, treba to zabrani trefovani sebe sama a cukani mezi projektilama a entitou
+- refaktorovat user input control, aby se to chovalo spravne
+- po user input control refaktorovat thrustery, aby se zapinaly pri AI a i pri user klikani
 
+- ok - pri zmacknuti dvou sipek do opacnych stran musi byt vysledek 0 a ne +/-1
+- ok - po reloadu sveta obcas nefunguje detekce kolizi
 - ok - revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot, ktere bude nepretrzite nastavovat v zavislosti na tom, jak moc je smer lodi mimo od pozadovaneho smeru (lod driftuje), nebo je jeji cumak mimo od pozadovane rotace (lod kouka jinam nez chceme)
 - ok - zbavit se getrotationcolumn a nahradit to za q.mult(vector_z...)
 - x ok - rotacni pohyb nastavit nejake brzdici minimum aby se brzdici sila nezmensovala do nekonecna
