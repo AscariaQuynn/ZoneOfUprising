@@ -11,8 +11,6 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
-- revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot, ktere bude nepretrzite nastavovat v zavislosti na tom, jak moc je smer lodi mimo od pozadovaneho smeru (lod driftuje), nebo je jeji cumak mimo od pozadovane rotace (lod kouka jinam nez chceme)
-- zbavit se getrotationcolumn a nahradit to za q.mult(vector_z...)
 - pri zmacknuti dvou sipek do opacnych stran musi byt vysledek 0 a ne +/-1
 - po reloadu sveta obcas nefunguje detekce kolizi
 - entitybuilder staci jeden v entity managerovi
@@ -26,6 +24,8 @@ Phase I:
 - collidables zvazit udelat jako pair entityprofile-entity a vubec vytvorit a zavest entityprofile-entity pairy navazany na entity name, pak to pujde lehce narvat do systemu a melo by z toho jit i urcovat, jestli je hrac naloadovany ale jeho entita je znicena, cili respawn
 - synchronizovat entitu a vsechny jeji projektily v jedny msg, treba to zabrani trefovani sebe sama a cukani mezi projektilama a entitou
 
+- ok - revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot, ktere bude nepretrzite nastavovat v zavislosti na tom, jak moc je smer lodi mimo od pozadovaneho smeru (lod driftuje), nebo je jeji cumak mimo od pozadovane rotace (lod kouka jinam nez chceme)
+- ok - zbavit se getrotationcolumn a nahradit to za q.mult(vector_z...)
 - x ok - rotacni pohyb nastavit nejake brzdici minimum aby se brzdici sila nezmensovala do nekonecna
 - ok - doresit brzdeni bocniho pohybu
 - ok - lodicka bude mit maly zapinatelny point light kolem sebe, aby byla schopna osvetlit nejblizsi okoli, napriklad v jeskyni v asteroidu
