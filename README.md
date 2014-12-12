@@ -11,6 +11,7 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
+- rotation control drag udelat asi dynamicky
 - entitybuilder staci jeden v entity managerovi
 - dodatecny nastaveni lode jako pole v jednom argumentu
 - pridat do entity profilu zbrane jako pole
