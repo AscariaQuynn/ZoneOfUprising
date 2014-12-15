@@ -11,6 +11,7 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
+- movement will be only on action listener, analog messes up acceleration when fps is low
 - rotation control drag udelat asi dynamicky
 - entitybuilder staci jeden v entity managerovi
 - dodatecny nastaveni lode jako pole v jednom argumentu
