@@ -11,12 +11,12 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
-- values for total mass, entity item masses, etc. should be double, not float in entity and entity profile
+- pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
+- hodnoty pro total mass, entity item masses, atd. budou double, ne float v entity a entity profile
 - movement will be only on action listener, analog messes up acceleration when fps is low
-- rotation control drag udelat asi dynamicky
-- entitybuilder staci jeden v entity managerovi
-- dodatecny nastaveni lode jako pole v jednom argumentu
-- pridat do entity profilu zbrane jako pole
+- ok - entitybuilder staci jeden v entity managerovi
+- ok jako EntityItem.getProperty*(String name) - dodatecny nastaveni lode jako pole v jednom argumentu
+- ok jako EntityItem s typem gun, engine etc. - pridat do entity profilu zbrane jako pole
 - pridat metody set float get float atd pro ty json parametry, nebo argument string pro nastavovani druhotnych veci
 - entity profile a item bude moct brat vlastnosti itemu stylem entityProfile.getColorRGBA(name, default) item.getFloat(name, default)
 - pokud bude vypnuty rotation control nebo movement control, vyse uvedene metody budou vracet vzdy 1f, protoze budeme predpokladat, ze se lod vzdy kouka ci leti spravne
