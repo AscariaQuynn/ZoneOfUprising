@@ -83,3 +83,10 @@ Misc:
 - - 3d radar s blizkyma entitama
 - - oznaceni zamireneho cile sestiuhelnikem
 
+interstellar space
+- local space simulovany bullet physics a jme3 scenegraphem
+- interstellar space - prostor bez fyziky simulovany jen serverem a na klientu bude lod na souradnicich 0,0,0
+- mezihvezdny prostor bude na serveru jako double position
+interstellar collision system
+- na lodi bude urceno nekolik bodu, ktere budou snimat kolize ve smeru linear velocity v mezihvezdnem prostoru, ktery bude simulovany pomoci double jen server side
+
