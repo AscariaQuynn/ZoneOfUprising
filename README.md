@@ -65,6 +65,8 @@ Phase I:
 
 
 Phase II:
+- pri detekci kolize si zapamatovavat vic nez jen jednu kolizi, aby hraci nemohli nekoho prizdit a znicit ho "turbo kolizema"
+  omezit treba na 3-5 kolizi, pri novy kolizi vyhodit nejstarsi kolizi a novou hodit na konec, linked list bude fajn
 - sjednotit synchronizaci projektilu a lode do jednoho pole
 - hitpointy do kategorii: nabijeci shield, opravovatelny armor, struktura
 - vpravo dole v hudu 3d radar s cilema
