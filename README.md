@@ -68,7 +68,7 @@ Phase I:
 
 
 Phase II:
-- setAIControl z engines a thrustru predelat do artificialintelligence.class a z control kontrolovat AI jestli ma control
+- setAIControl z engines a thrustru predelat do artificialintelligence.class a z control kontrolovat AI jestli ma control, mozna ot udelat jako event
 - ve smeru linear velocity posilat raycast do pevnyho bodu a pocitat k nemu drahu a dobrzdeni, jestli to jde ubrzdit a kdy presne
 - spocitat angular kinetic force a davat i damage z prudky rotace
 - pri detekci kolize si zapamatovavat vic nez jen jednu kolizi, aby hraci nemohli nekoho prizdit a znicit ho "turbo kolizema"
