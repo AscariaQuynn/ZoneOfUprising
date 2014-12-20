@@ -11,6 +11,7 @@ my first project, readme maybe later. no one will read it
 TODO:
 
 Phase I:
+- implement vector3d (a mozna quaterniond i kdyz to asi nebude nutny) pro double kalkulace a zkusit to navliknout na kalkulaci rotacniho odporu v rotacnim kompenzatoru
 - game server a central server projede vsechny mozny adresy jak se k nemu da pripjit a vsechny je vypise, ne jen jednu a ne jen game server
 - pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
 - hodnoty pro total mass, entity item masses, atd. budou double, ne float v entity a entity profile
