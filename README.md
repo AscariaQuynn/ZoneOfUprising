@@ -67,6 +67,7 @@ Phase I:
 
 
 Phase II:
+- ve smeru linear velocity posilat raycast do pevnyho bodu a pocitat k nemu drahu a dobrzdeni, jestli to jde ubrzdit a kdy presne
 - spocitat angular kinetic force a davat i damage z prudky rotace
 - pri detekci kolize si zapamatovavat vic nez jen jednu kolizi, aby hraci nemohli nekoho prizdit a znicit ho "turbo kolizema"
   omezit treba na 3-5 kolizi, pri novy kolizi vyhodit nejstarsi kolizi a novou hodit na konec, linked list bude fajn
