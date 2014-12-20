@@ -20,6 +20,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+- aktivace AI prevezme kontrolu nad lodi uplne, takze user input to bude ignorovat a thrustery se budou aktivovat silama
 - udelat vysledny damage z kolize souctem 1-3 nezavislych kolizi, behem jednoho delta timeoutu aby se nestavalo, ze silyn naraz da 50 dmg a viditelne slabsi 500dmg
 - star dust efekt nedelat kolem lodi, ale kolem kamery
 - implement vector3d (a mozna quaterniond i kdyz to asi nebude nutny) pro double kalkulace a zkusit to navliknout na kalkulaci rotacniho odporu v rotacnim kompenzatoru
