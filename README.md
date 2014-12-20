@@ -11,6 +11,9 @@ my first project, readme maybe later. no one will read it
 TODO:
 setCcdMotionThreshold()	The amount of motion in 1 physics tick to trigger the continuous motion detection in moving objects that push one another. Rarely used, but necessary if your moving objects get stuck or roll through one another.
 
+zkusit esi to de i s gimpact
+https://code.google.com/p/jmonkeyengine/source/browse/trunk/engine/src/test/jme3test/bullet/TestAttachGhostObject.java
+
 Promyslet: bulletproof app state managing
 - do baseappstate implementovat List se zavislostmi na jinych app state a pri initialize a cleanupu v base state kontrolovat, jestli je mozne state pridat a odebrat
 - implementovat abstract public void checkStatesInitialize a checkStatesCleanup ktere kontroluji jestli je mozne state pridat ci odebrat a implementovat eventy, ktere pri pridani/odebrani app state informuji ostatni app state a ty rozhodnou, jestli bez ostatnich app state nemuzou byt a muzou vyhodit co nejvic odpovidajci exceptionu
