@@ -9,6 +9,7 @@ my first project, readme maybe later. no one will read it
 
 
 TODO:
+setCcdMotionThreshold()	The amount of motion in 1 physics tick to trigger the continuous motion detection in moving objects that push one another. Rarely used, but necessary if your moving objects get stuck or roll through one another.
 
 Promyslet: bulletproof app state managing
 - do baseappstate implementovat List se zavislostmi na jinych app state a pri initialize a cleanupu v base state kontrolovat, jestli je mozne state pridat a odebrat
