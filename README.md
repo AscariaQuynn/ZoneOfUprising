@@ -9,6 +9,7 @@ my first project, readme maybe later. no one will read it
 
 
 TODO:
+do particle controlleru implementovat box source a sphere source
 setCcdMotionThreshold()	The amount of motion in 1 physics tick to trigger the continuous motion detection in moving objects that push one another. Rarely used, but necessary if your moving objects get stuck or roll through one another.
 
 zkusit esi to de i s gimpact
