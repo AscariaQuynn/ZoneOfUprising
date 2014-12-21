@@ -21,6 +21,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+- kompenzatory prejmenovat na asistenty a pak tam pujdou pridavat ruzny blbuvzdorny asistenti jako treba varovani pred kolizi, popremyslet jestli umoznit asistentum prebrat kontrolu nad lodi a tudiz zahazovat user input kdyz budou chtit
 - thrustry predelat do db a jako particle controller
 - aktivace AI prevezme kontrolu nad lodi uplne, takze user input to bude ignorovat a thrustery se budou aktivovat silama, pri aktivni ai nebudou reagovat ani motory
 - udelat vysledny damage z kolize souctem 1-3 nezavislych kolizi, behem jednoho delta timeoutu aby se nestavalo, ze silyn naraz da 50 dmg a viditelne slabsi 500dmg
