@@ -21,6 +21,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+- pridat maximalni povolenou kinetickou energii, pri ktere nebude lodicka dostavat damage, zkusit to nastavit na nizkou hodnotu a poskodit lodicku pomoci akcelerace
 - kompenzatory prejmenovat na asistenty a pak tam pujdou pridavat ruzny blbuvzdorny asistenti jako treba varovani pred kolizi, popremyslet jestli umoznit asistentum prebrat kontrolu nad lodi a tudiz zahazovat user input kdyz budou chtit
 - autopilot bude asi jako asistent ktery prebere uplnou kontrolu nad lodi a AI bude vyuzivat autopilota, takze neni nutne kontrolovat aiControl enabled
 - autopilot bude podporovat steering behaviours, nikoli AI
