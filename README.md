@@ -25,6 +25,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+- properties helper dostane properties z item a z entityitem a bude prohledavat nejdriv entityitem.properties a pak item.properties jako stock fallback, takze nebude nutne zdvojovat stejne properties v databazi
 - user bude mit svuj inventar kam bude kupovat veci z obchodu a lodicka bude mit taky inventar kam bude sbirat veci z vesmiru, na lodicku pujdou narvat veci z jejiho inventare, ci user inventare abych se nemusel central serveru dotazovat na itemy... bude stacit hracuv a lodni inventar
 - pridat maximalni povolenou kinetickou energii, pri ktere nebude lodicka dostavat damage, zkusit to nastavit na nizkou hodnotu a poskodit lodicku pomoci akcelerace
 - kompenzatory prejmenovat na asistenty a pak tam pujdou pridavat ruzny blbuvzdorny asistenti jako treba varovani pred kolizi, popremyslet jestli umoznit asistentum prebrat kontrolu nad lodi a tudiz zahazovat user input kdyz budou chtit
