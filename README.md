@@ -25,6 +25,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+- jednotlive entityitemy budou mit hmotnost a lod bude mit max nosnost, scitat to do celkove hmotnosti a tu bude mit fyzika lodi
 - properties helper dostane properties z item a z entityitem a bude prohledavat nejdriv entityitem.properties a pak item.properties jako stock fallback, takze nebude nutne zdvojovat stejne properties v databazi
 - user bude mit svuj inventar kam bude kupovat veci z obchodu a lodicka bude mit taky inventar kam bude sbirat veci z vesmiru, na lodicku pujdou narvat veci z jejiho inventare, ci user inventare abych se nemusel central serveru dotazovat na itemy... bude stacit hracuv a lodni inventar
 - pridat maximalni povolenou kinetickou energii, pri ktere nebude lodicka dostavat damage, zkusit to nastavit na nizkou hodnotu a poskodit lodicku pomoci akcelerace
@@ -80,6 +81,8 @@ Phase I:
 
 
 Phase II:
+- zavest tridy lodi a vhodnost entityitemu pro dane typy lodi, aby heavy motor nesel do stihacky, ale light motor muze do krizniku, takze asi jen urcovat, do az jake tridy je entityitem vhodny
+- rozlisovat tridy lodi dle min a max tonnage?
 - setAIControl z engines a thrustru predelat do artificialintelligence.class a z control kontrolovat AI jestli ma control, mozna ot udelat jako event
 - ve smeru linear velocity posilat raycast do pevnyho bodu a pocitat k nemu drahu a dobrzdeni, jestli to jde ubrzdit a kdy presne
 - spocitat angular kinetic force a davat i damage z prudky rotace
