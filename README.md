@@ -25,6 +25,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+- pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
 - jednotlive entityitemy budou mit hmotnost a lod bude mit max nosnost, scitat to do celkove hmotnosti a tu bude mit fyzika lodi
 - properties helper dostane properties z item a z entityitem a bude prohledavat nejdriv entityitem.properties a pak item.properties jako stock fallback, takze nebude nutne zdvojovat stejne properties v databazi
 - user bude mit svuj inventar kam bude kupovat veci z obchodu a lodicka bude mit taky inventar kam bude sbirat veci z vesmiru
@@ -37,13 +38,8 @@ Phase I:
 - udelat vysledny damage z kolize souctem 1-3 nezavislych kolizi, behem jednoho delta timeoutu aby se nestavalo, ze silyn naraz da 50 dmg a viditelne slabsi 500dmg
 - star dust efekt nedelat kolem lodi, ale kolem kamery
 - implement vector3d (a mozna quaterniond i kdyz to asi nebude nutny) pro double kalkulace a zkusit to navliknout na kalkulaci rotacniho odporu v rotacnim kompenzatoru
-- game server a central server projede vsechny mozny adresy jak se k nemu da pripjit a vsechny je vypise, ne jen jednu a ne jen game server
-- pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
 - hodnoty pro total mass, entity item masses, atd. budou double, ne float v entity a entity profile
 - movement will be only on action listener, analog messes up acceleration when fps is low
-- ok - entitybuilder staci jeden v entity managerovi
-- ok jako EntityItem.getProperty*(String name) - dodatecny nastaveni lode jako pole v jednom argumentu
-- ok jako EntityItem s typem gun, engine etc. - pridat do entity profilu zbrane jako pole
 - pridat metody set float get float atd pro ty json parametry, nebo argument string pro nastavovani druhotnych veci
 - entity profile a item bude moct brat vlastnosti itemu stylem entityProfile.getColorRGBA(name, default) item.getFloat(name, default)
 - pokud bude vypnuty rotation control nebo movement control, vyse uvedene metody budou vracet vzdy 1f, protoze budeme predpokladat, ze se lod vzdy kouka ci leti spravne
@@ -54,6 +50,10 @@ Phase I:
 - refaktorovat user input control, aby se to chovalo spravne
 - po user input control refaktorovat thrustery, aby se zapinaly pri AI a i pri user klikani
 
+- ok - game server a central server projede vsechny mozny adresy jak se k nemu da pripjit a vsechny je vypise, ne jen jednu a ne jen game server
+- ok - entitybuilder staci jeden v entity managerovi
+- ok jako EntityItem.getProperty*(String name) - dodatecny nastaveni lode jako pole v jednom argumentu
+- ok jako EntityItem s typem gun, engine etc. - pridat do entity profilu zbrane jako pole
 - ok - pridat maximalni povolenou kinetickou energii, pri ktere nebude lodicka dostavat damage, zkusit to nastavit na nizkou hodnotu a poskodit lodicku pomoci akcelerace
 - ok - pri zmacknuti dvou sipek do opacnych stran musi byt vysledek 0 a ne +/-1
 - ok - po reloadu sveta obcas nefunguje detekce kolizi
@@ -117,11 +117,3 @@ Misc:
 - - - rakety - nema vliv, budou videt pod lodickou, kazda lodicka bude mit missile sloty
 - - 3d radar s blizkyma entitama
 - - oznaceni zamireneho cile sestiuhelnikem
-
-interstellar space
-- local space simulovany bullet physics a jme3 scenegraphem
-- interstellar space - prostor bez fyziky simulovany jen serverem a na klientu bude lod na souradnicich 0,0,0
-- mezihvezdny prostor bude na serveru jako double position
-interstellar collision system
-- na lodi bude urceno nekolik bodu, ktere budou snimat kolize ve smeru linear velocity v mezihvezdnem prostoru, ktery bude simulovany pomoci double jen server side
-
