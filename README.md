@@ -9,6 +9,7 @@ my first project, readme maybe later. no one will read it
 
 
 TODO:
+-----
 
 app state manager pujde nahradit mym state managerem v application a zkusit v base app state predelat initialize a poustet nacasteny initialize(ZoUAppStateManager, ZoneOfUprising)
 
