@@ -27,8 +27,8 @@ Promyslet: bulletproof app state managing
 Phase I:
 - jednotlive entityitemy budou mit hmotnost a lod bude mit max nosnost, scitat to do celkove hmotnosti a tu bude mit fyzika lodi
 - properties helper dostane properties z item a z entityitem a bude prohledavat nejdriv entityitem.properties a pak item.properties jako stock fallback, takze nebude nutne zdvojovat stejne properties v databazi
-- user bude mit svuj inventar kam bude kupovat veci z obchodu a lodicka bude mit taky inventar kam bude sbirat veci z vesmiru, na lodicku pujdou narvat veci z jejiho inventare, ci user inventare abych se nemusel central serveru dotazovat na itemy... bude stacit hracuv a lodni inventar
-- pridat maximalni povolenou kinetickou energii, pri ktere nebude lodicka dostavat damage, zkusit to nastavit na nizkou hodnotu a poskodit lodicku pomoci akcelerace
+- user bude mit svuj inventar kam bude kupovat veci z obchodu a lodicka bude mit taky inventar kam bude sbirat veci z vesmiru
+- na lodicku pujdou narvat veci z jejiho inventare, ci user inventare abych se nemusel central serveru dotazovat na itemy... bude stacit hracuv a lodni inventar
 - kompenzatory prejmenovat na asistenty a pak tam pujdou pridavat ruzny blbuvzdorny asistenti jako treba varovani pred kolizi, popremyslet jestli umoznit asistentum prebrat kontrolu nad lodi a tudiz zahazovat user input kdyz budou chtit
 - autopilot bude asi jako asistent ktery prebere uplnou kontrolu nad lodi a AI bude vyuzivat autopilota, takze neni nutne kontrolovat aiControl enabled
 - autopilot bude podporovat steering behaviours, nikoli AI
@@ -54,6 +54,7 @@ Phase I:
 - refaktorovat user input control, aby se to chovalo spravne
 - po user input control refaktorovat thrustery, aby se zapinaly pri AI a i pri user klikani
 
+- ok - pridat maximalni povolenou kinetickou energii, pri ktere nebude lodicka dostavat damage, zkusit to nastavit na nizkou hodnotu a poskodit lodicku pomoci akcelerace
 - ok - pri zmacknuti dvou sipek do opacnych stran musi byt vysledek 0 a ne +/-1
 - ok - po reloadu sveta obcas nefunguje detekce kolizi
 - ok - revisit - engines control bude mit metody getLinearVelocityDot a getRotationDot, ktere bude nepretrzite nastavovat v zavislosti na tom, jak moc je smer lodi mimo od pozadovaneho smeru (lod driftuje), nebo je jeji cumak mimo od pozadovane rotace (lod kouka jinam nez chceme)
@@ -81,8 +82,9 @@ Phase I:
 
 
 Phase II:
-- zavest tridy lodi a vhodnost entityitemu pro dane typy lodi, aby heavy motor nesel do stihacky, ale light motor muze do krizniku, takze asi jen urcovat, do az jake tridy je entityitem vhodny
+- zavest tridy lodi a vhodnost entityitemu pro dane tridy lodi, aby heavy motor nesel do stihacky, ale light motor muze do krizniku, takze asi jen urcovat, do az jake tridy je entityitem vhodny
 - rozlisovat tridy lodi dle min a max tonnage?
+- vhodnost entityitemu pro tridy lodi bude v jednom sloupecku jako json string a filtrovani bude az na strane herniho klienta
 - setAIControl z engines a thrustru predelat do artificialintelligence.class a z control kontrolovat AI jestli ma control, mozna ot udelat jako event
 - ve smeru linear velocity posilat raycast do pevnyho bodu a pocitat k nemu drahu a dobrzdeni, jestli to jde ubrzdit a kdy presne
 - spocitat angular kinetic force a davat i damage z prudky rotace
