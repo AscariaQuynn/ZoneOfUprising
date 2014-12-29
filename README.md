@@ -26,6 +26,7 @@ Promyslet: bulletproof app state managing
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
 
 Phase I:
+--------
 - pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
 - jednotlive entityitemy budou mit hmotnost a lod bude mit max nosnost, scitat to do celkove hmotnosti a tu bude mit fyzika lodi
 - properties helper dostane properties z item a z entityitem a bude prohledavat nejdriv entityitem.properties a pak item.properties jako stock fallback, takze nebude nutne zdvojovat stejne properties v databazi
@@ -83,6 +84,7 @@ Phase I:
 
 
 Phase II:
+---------
 - zavest tridy lodi a vhodnost entityitemu pro dane tridy lodi, aby heavy motor nesel do stihacky, ale light motor muze do krizniku, takze asi jen urcovat, do az jake tridy je entityitem vhodny
 - rozlisovat tridy lodi dle min a max tonnage?
 - vhodnost entityitemu pro tridy lodi bude v jednom sloupecku jako json string a filtrovani bude az na strane herniho klienta
@@ -103,6 +105,7 @@ Phase II:
 
 
 Phase III:
+----------
 - lodicka bude mit energii v podobe poctu bodu a kazdy zapnuty system bude z teto energie cepat nejake body, kdyz bude zbyvajcich bodu (treba reprezentovanych jako procent) malo, funkce nepujde zapnout potom sync message by mela byt schopna pojmout nastaveni ze vice control najednou
 - moznost vybrat herni mod [deathmatch, team deathmatch]
 - settings menu s nastavitelnymi volbami
@@ -110,6 +113,7 @@ Phase III:
 
 
 Misc:
+-----
 - hud
 - - energie pro systemy
 - - - stity: malo, stredne, hodne - rychlost nabijeni
