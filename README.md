@@ -24,6 +24,7 @@ Promyslet: bulletproof app state managing
 - do baseappstate implementovat List se zavislostmi na jinych app state a pri initialize a cleanupu v base state kontrolovat, jestli je mozne state pridat a odebrat
 - implementovat abstract public void checkStatesInitialize a checkStatesCleanup ktere kontroluji jestli je mozne state pridat ci odebrat a implementovat eventy, ktere pri pridani/odebrani app state informuji ostatni app state a ty rozhodnou, jestli bez ostatnich app state nemuzou byt a muzou vyhodit co nejvic odpovidajci exceptionu
 - zvazit jestli jde appstates do tech kontrolujcich eventu pridavat automaticky a uzivatel by jen implementovat abstract check a event metody
+- projektil bude mit base speed a delo speed modifier, nebo naopak?
 
 Phase I:
 --------
