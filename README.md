@@ -28,6 +28,7 @@ Promyslet: bulletproof app state managing
 
 Phase I:
 --------
+- pri pridavani a odebirani z targetables pustit event added removed a zbrane muzou odposlouchavat targetables kvuli unlock target a nemusej resit target parent node, ani entity unloaded
 - pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
 - jednotlive entityitemy budou mit hmotnost a lod bude mit max nosnost, scitat to do celkove hmotnosti a tu bude mit fyzika lodi
 - properties helper dostane properties z item a z entityitem a bude prohledavat nejdriv entityitem.properties a pak item.properties jako stock fallback, takze nebude nutne zdvojovat stejne properties v databazi
