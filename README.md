@@ -28,6 +28,7 @@ Promyslet: bulletproof app state managing
 
 Phase I:
 --------
+- opozdene spousteni predelat z scheduled executoru na timer
 - pri pridavani a odebirani z targetables pustit event added removed a zbrane muzou odposlouchavat targetables kvuli unlock target a nemusej resit target parent node, ani entity unloaded
 - pro json pouzit http://examples.javacodegeeks.com/core-java/json/java-json-parser-example/
 - jednotlive entityitemy budou mit hmotnost a lod bude mit max nosnost, scitat to do celkove hmotnosti a tu bude mit fyzika lodi
